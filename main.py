@@ -26,6 +26,7 @@ def main():
         player_input(board)
         switch_player()
         comp_run(board)
+
         if player_win(board):
             print_board(board)
             print("Congratulations, you won!")

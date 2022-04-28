@@ -90,3 +90,6 @@ def comp_run(board):
         if board[position] == "-":
             board[position] = "O"
             switch_player()
+        elif check_tie(board):
+            print("Its a tie")
+            break
