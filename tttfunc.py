@@ -86,10 +86,20 @@ def switch_player():
 
 def comp_run(board):
     while current_player == "O":
+
         position = random.randint(0, 8)
-        if board[position] == "-":
+
+
+
+        if board[4] == "-":
+            board[4] = "O"
+            switch_player()
+
+
+        elif board[position] == "-":
             board[position] = "O"
             switch_player()
+
         elif check_tie(board):
             print("Its a tie")
             break
